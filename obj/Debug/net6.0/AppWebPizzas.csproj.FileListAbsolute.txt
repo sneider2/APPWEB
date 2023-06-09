@@ -1,0 +1,78 @@
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.AssemblyReference.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.AssemblyInfoInputs.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.AssemblyInfo.cs
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.CoreCompileInputs.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.RazorAssemblyInfo.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.RazorAssemblyInfo.cs
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\appsettings.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.staticwebassets.runtime.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.exe
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.deps.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.runtimeconfig.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.pdb
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\EPPlus.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\scopedcss\bundle\AppWebPizzas.styles.css
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\scopedcss\projectbundle\AppWebPizzas.bundle.scp.css
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.CopyComplete
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\refint\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.pdb
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.genruntimeconfig.cache
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\obj\Debug\net6.0\ref\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\UNIVERSIDAD\7 SEMESTRE\PROGRAMACION 3\3 CORTE\AppWebPizzas\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\appsettings.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.staticwebassets.runtime.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.exe
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.deps.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.runtimeconfig.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\AppWebPizzas.pdb
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\EPPlus.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.AssemblyReference.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.AssemblyInfoInputs.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.AssemblyInfo.cs
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.CoreCompileInputs.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.RazorAssemblyInfo.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.RazorAssemblyInfo.cs
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\scopedcss\bundle\AppWebPizzas.styles.css
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\scopedcss\projectbundle\AppWebPizzas.bundle.scp.css
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.csproj.CopyComplete
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\refint\AppWebPizzas.dll
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.pdb
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\AppWebPizzas.genruntimeconfig.cache
+C:\Users\sneider\OneDrive\Escritorio\APPPIZZAS\AppWebPizzas\obj\Debug\net6.0\ref\AppWebPizzas.dll

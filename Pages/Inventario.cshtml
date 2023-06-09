@@ -1,0 +1,77 @@
+@page
+@model InventarioModel
+@{
+    ViewData["Title"] = "Inventario";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+
+    <link rel="stylesheet" href="~/css/Inventario.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <h1>Inventario</h1>
+
+    <form method="post"> <!-- Formulario para enviar los datos -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de la pizza</th>
+                    <th>Cantidad de porciones en inventario</th>
+                    <th>Cantidad de porciones vendidas</th>
+                    <th>Cantidad restante</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Bucle para generar las filas de la tabla -->
+                @for (int i = 0; i < Model.Pizzas.Count; i++) 
+                {
+                    <tr>
+                        <td>@Model.Pizzas[i].Nombre</td> <!-- Muestra el nombre de la pizza -->
+                        <td><input type="number" name="Pizzas[@i].CantidadInventario" value="@Model.Pizzas[i].CantidadInventario" onchange="calcularCantidadRestante(this)" /></td> <!-- Campo para ingresar la cantidad de porciones en inventario -->
+                        <td><input type="number" name="Pizzas[@i].CantidadVendida" value="@Model.Pizzas[i].CantidadVendida" onchange="calcularCantidadRestante(this)" /></td> <!-- Campo para ingresar la cantidad de porciones vendidas -->
+                        <td><span id="cantidadRestante_@i"></span></td> <!-- Muestra la cantidad restante de porciones calculada mediante JavaScript -->
+                        <td><button type="button" class="btnEliminar" onclick="eliminarFila(this)">Eliminar</button></td> <!-- Botón para eliminar la fila -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <button type="button" class="btnAgregar" onclick="agregarFila()">Agregar fila</button> <!-- Botón para agregar una nueva fila a la tabla -->
+
+    </form>
+
+    <script>
+        function agregarFila() {
+            var fila = '<tr>' +
+                '<td><input type="text" name="Pizzas[' + $('table tbody tr').length + '].Nombre" /></td>' + <!-- Campo para ingresar el nombre de la nueva pizza -->
+                '<td><input type="number" name="Pizzas[' + $('table tbody tr').length + '].CantidadInventario" onchange="calcularCantidadRestante(this)" /></td>' + <!-- Campo para ingresar la cantidad de porciones en inventario de la nueva pizza -->
+                '<td><input type="number" name="Pizzas[' + $('table tbody tr').length + '].CantidadVendida" onchange="calcularCantidadRestante(this)" /></td>' + <!-- Campo para ingresar la cantidad de porciones vendidas de la nueva pizza -->
+                '<td><span id="cantidadRestante_' + $('table tbody tr').length + '"></span></td>' + <!-- Muestra la cantidad restante de porciones de la nueva pizza calculada mediante JavaScript -->
+                '<td><button type="button" class="btnEliminar" onclick="eliminarFila(this)">Eliminar</button></td>' + <!-- Botón para eliminar la fila -->
+                '</tr>';
+
+            $('table tbody').append(fila); <!-- Agrega la nueva fila a la tabla -->
+        }
+
+        function eliminarFila(btnEliminar) {
+            $(btnEliminar).closest('tr').remove(); <!-- Elimina la fila correspondiente al botón de eliminación -->
+        }
+
+        function calcularCantidadRestante(input) {
+            var row = $(input).closest('tr'); <!-- Obtiene la fila actual -->
+            var cantidadInventario = parseInt($(row).find('input[name$="CantidadInventario"]').val()); <!-- Obtiene la cantidad de porciones en inventario ingresada en la fila actual -->
+            var cantidadVendida = parseInt($(row).find('input[name$="CantidadVendida"]').val()); <!-- Obtiene la cantidad de porciones vendidas ingresada en la fila actual -->
+            var cantidadRestante = cantidadInventario - cantidadVendida; <!-- Calcula la cantidad restante de porciones -->
+
+            $(row).find('span[id^="cantidadRestante_"]').text(cantidadRestante); <!-- Muestra la cantidad restante de porciones en el campo correspondiente de la fila actual -->
+        }
+    </script>
+</body>
+</html>

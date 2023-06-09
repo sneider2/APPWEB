@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <h1>¿Quiénes Somos?</h1>
+
+    <!--Mensaje pedido realizado con exito-->
+      @if (TempData["Error2"] != null)
+    {
+        <div class="mensaje">@TempData["Error2"]</div>
+    }
+
+    <div class="contenido">
+        <p>Bienvenidos a <b>Tu Pizzería</b>, donde nuestra pasión por la pizza se combina con ingredientes frescos y de alta calidad para ofrecerles una experiencia gastronómica única. Ya sea que nos visiten en nuestro acogedor local o nos pidan a domicilio a través de nuestra página web, estamos comprometidos a satisfacer sus paladares exigentes con una amplia variedad de opciones en nuestro menú. Nuestro propósito es brindarles momentos inolvidables y deleitar sus sentidos con cada bocado de nuestras deliciosas pizzas.</p>
+        <p>En nuestra página web, encontrarán un formulario para hacer el registro como cliente y un formulario para iniciar sesión, pero si no desea hacerlo podrá <b>realizar el pedido</b>, dando clic en "Realizar pedido" en el menú, para realizar su pedido según sus gustos y preferencias. Nuestro equipo se encargará de preparar cada pizza con los ingredientes más frescos, y nuestro servicio de entrega a domicilio garantiza que su pedido llegue rápido y caliente a su puerta. Ya sea que nos visiten o nos pidan a domicilio, nuestra pizzería está aquí para hacer que sus momentos sean especiales y sabrosos.</p>
+        <a href="/Contacto"><h5 class="contacto"><b><i>Contáctanos</i></b></h5></a> <!-- Enlace a la página de contacto -->
+
+    </div>
+    <div>
+        <!--<form action="/Realizar Pedido">
+            <button type="submit">Realizar pedido</button>
+        </form>-->
+        <a href="/RegistroClientes"><h4 class="registro"><b>Registrarme</b></h4></a> <!-- Enlace a la página de registro de clientes -->
+
+    </div>
+</body>
+</html>

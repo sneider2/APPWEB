@@ -1,0 +1,54 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/Login.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>Iniciar Sesión</h1>
+    
+    <!-- Mensaje de error -->
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="mensajeerror">
+            @Model.ErrorMessage
+        </div>
+    }
+    
+    <!-- Mensaje de error temporal -->
+    @if (TempData["Error"] != null)
+    {
+        <div class="mensaje">@TempData["Error"]</div>
+    }
+    
+    <!-- Formulario de inicio de sesión -->
+    <form method="post">
+        <div>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="Usuario" required/>
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="Contrasena" required/>
+        </div>
+        <div>
+            <button type="submit">Iniciar Sesión</button>
+        </div>
+        <div>
+            <a href="https://wa.me/3143768499" class="recuperarcontra">Recuperar Usuario o Contraseña por WhatsApp</a>
+        </div>
+    </form>
+  
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+@page
+@model ContactoModel
+@{
+    ViewData["Title"] = "Contacto";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="~/css/Contacto.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <h1>Contacto</h1>
+
+    <div class="contenido">
+        <p><span>¡Estamos encantados de ayudarte!</span> Aquí encontrarás diferentes formas de ponerte en contacto con nosotros:</p>
+        <ul>
+            <li class="redes"><b>Redes sociales:</b> <!-- Lista de redes sociales -->
+                <ul>
+                    <li><a href="https://www.facebook.com/TuPizzeriaFavorita" target="_blank"><b>-</b> Facebook</a></li> <!-- Enlace a la página de Facebook -->
+                    <li><a href="https://www.instagram.com/TuPizzeriaFavorita" target="_blank"><b>-</b> Instagram</a></li> <!-- Enlace a la página de Instagram -->
+                </ul>
+            </li>
+            <li><b>Teléfono:</b> <a href="tel:+573143768499">+573143768499</a></li> <!-- Número de teléfono con enlace -->
+            <li><b>WhatsApp:</b> <a href="https://wa.me/3143768499" target="_blank">3143768499</a></li> <!-- Enlace de WhatsApp -->
+            <li><b>Ubicación:</b> Calle 50 9-10 barrio Boston, Barrancabermeja, Santander, Colombia.</li> <!-- Dirección de ubicación -->
+            <li><b>Correo electrónico:</b> <a href="mailto:tupizzeriafav@gmail.com">tupizzeriafav@gmail.com</a></li> <!-- Correo electrónico con enlace de correo -->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@page
+@model RealizarPedidosModel
+@{
+    ViewData["Title"] = "Realizar Pedidos";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedidos</title>
+
+    <link rel="stylesheet" href="~/css/RealizarPedidos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>Realizar Pedidos</h1>
+
+    <!-- Mensaje de error temporal -->
+    @if (TempData["Error"] != null)
+    {
+        <div class="mensaje">@TempData["Error"]</div>
+    }
+
+    <!-- Formulario -->
+    <form method="post">
+        <div class="formulario">
+            <div>
+                <!-- Nombre del Cliente -->
+                <label for="nombreCliente">Nombre del Cliente:</label>
+                <input type="text" id="nombre" name="NombreCliente" pattern="[a-zA-Zñ-Ñ]{2,15}" title="Ingresa de 2 a 15 letras" required />
+            </div>
+            <div class="direccion">
+                <!-- Dirección de domicilio -->
+                <label for="direccionDomicilio">Dirección de domicilio (con el barrio):</label>
+                <input type="text" id="direccionDomicilio" name="DireccionDomicilio" required/>
+            </div>
+            <div class="telefono">
+                <!-- Teléfono -->
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="Telefono" pattern="[0-9]{10,10}" title="El número debe ser de 10 dígitos" required/>
+            </div>
+            <div class="nombrepizza">
+                <!-- Nombre de pizza -->
+                <label for="nombrePizza">Nombre de pizza:</label>
+                <select id="nombrePizza" name="NombrePizza" onchange="mostrarDescripcionPizza()">
+                    <option value="Margarita">Margarita</option>
+                    <option value="Cuatro quesos">Cuatro quesos</option>
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Cuatro estaciones">Cuatro estaciones</option>
+                    <option value="Champiñones">Champiñones</option>
+                    <option value="Hawaiana">Hawaiana</option>
+                    <option value="Marinara">Marinara</option>
+                    <option value="Napolitana">Napolitana</option>
+                </select>
+            </div>
+            <div class="descripcion">
+                <!-- Descripción de la pizza -->
+                <label for="descripcionPizza">Descripción de la pizza:</label>
+                <textarea class="textarea" id="descripcionPizza" name="DescripcionPizza" rows="3" cols="30" readonly></textarea>
+            </div>
+            <div class="cantidadporciones">
+                <!-- Cantidad de porciones -->
+                <label for="cantidadPorciones">Cantidad de porciones:</label>
+                <input type="number" id="cantidadPorciones" name="CantidadPorciones" min="1" max="99"  title="El número debe ser de 2 dígitos" required/>
+            </div>
+            <div class="aplicarsalsas">
+                <!-- Aplicar salsas -->
+                <label for="aplicarSalsas">Aplicar salsas:</label>
+                <select id="aplicarSalsas" name="AplicarSalsas">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="precio">
+                <!-- Precio -->
+                <label for="precio">Precio:</label>
+                <span id="precio" name="Precio"></span>
+            </div>
+            <div>
+                <button type="submit">Realizar Pedido</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function mostrarDescripcionPizza() {
+            var select = document.getElementById('nombrePizza');
+            var descripcionTextarea = document.getElementById('descripcionPizza');
+            var descripcion = '';
+
+            switch (select.value) {
+                case 'Margarita':
+                    descripcion = 'Pizza clásica con salsa de tomate, queso mozzarella y hojas de albahaca.';
+                    break;
+                case 'Cuatro quesos':
+                    descripcion = 'Pizza con una mezcla de quesos: mozzarella, gorgonzola, parmesano y provolone.';
+                    break;
+                case 'Pepperoni':
+                    descripcion = 'Pizza con salsa de tomate, queso mozzarella y rodajas de pepperoni (salami).';
+                    break;
+                case 'Cuatro estaciones':
+                    descripcion = 'Pizza dividida en cuatro secciones, cada una con ingredientes diferentes, como champiñones, jamón, aceitunas y alcachofas.';
+                    break;
+                case 'Champiñones':
+                    descripcion = 'Pizza con salsa de tomate, queso mozzarella y champiñones frescos.';
+                    break;
+                case 'Hawaiana':
+                    descripcion = 'Pizza con salsa de tomate, queso mozzarella, jamón y piña.';
+                    break;
+                case 'Marinara':
+                    descripcion = 'Pizza con salsa de tomate, ajo, aceite de oliva y orégano, sin queso.';
+                    break;
+                case 'Napolitana':
+                    descripcion = 'Pizza con salsa de tomate, queso mozzarella, anchoas, alcaparras y aceitunas negras.';
+                    break;
+            }
+
+            descripcionTextarea.value = descripcion;
+        }
+     
+        // Cálculo del pedido
+        document.getElementById('cantidadPorciones').addEventListener('input', function () {
+            var cantidad = parseInt(this.value);
+            var precio = document.getElementById('precio');
+            var total = cantidad * 5000;
+            precio.textContent = '$' + total.toLocaleString();
+        });
+    </script>
+</body>
+</html>

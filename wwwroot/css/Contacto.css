@@ -1,0 +1,56 @@
+/* Estilos generales */
+
+.contenido{
+    font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial o una fuente sans-serif genérica */
+    padding: 20px; /* Agrega un espacio de 20 píxeles de relleno alrededor del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente en su contenedor */
+    line-height: 1.5; /* Establece la altura de línea del texto como 1.5 veces el tamaño de la fuente */
+    max-width: 600px; /* Establece el ancho máximo del contenido en 600 píxeles */
+}
+
+span{
+    color: #439B8F; /* Establece el color del texto dentro de los elementos <span> como #439B8F */
+    font-weight: bold; /* Establece el peso de la fuente del texto dentro de los elementos <span> como negrita */
+}
+
+ul li{
+    list-style: none; /* Elimina los estilos de viñetas predeterminados de los elementos <li> */
+    padding-bottom: 1em; /* Agrega un espacio de 1 unidad de altura de línea después de cada elemento <li> */
+}
+
+.contenido ul{
+    margin-left: 0; /* Elimina el margen izquierdo predeterminado de la lista desordenada (<ul>) */
+    padding-left: 0; /* Elimina el relleno izquierdo predeterminado de la lista desordenada (<ul>) */
+    margin-left: 0; /* Elimina el margen izquierdo predeterminado de la lista desordenada (<ul>) */
+}
+
+.redes{
+    padding-bottom: 1em; /* Agrega un espacio de 1 unidad de altura de línea después de los elementos con la clase "redes" */
+}
+
+.redes ul li{
+    padding-bottom: 0; /* Elimina el espacio después de cada elemento <li> dentro de los elementos con la clase "redes" */
+}
+
+li a{
+    color: black; /* Establece el color del texto de los enlaces dentro de los elementos <li> como negro */
+    text-decoration: none; /* Elimina la decoración de texto predeterminada de los enlaces dentro de los elementos <li> */
+}
+
+li a:hover{
+    text-decoration: underline; /* Agrega una línea de subrayado al pasar el cursor sobre los enlaces dentro de los elementos <li> */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 590px) {
+    form {
+        max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas pequeñas */
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 600px) {
+    form {
+        max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas grandes */
+    }
+}

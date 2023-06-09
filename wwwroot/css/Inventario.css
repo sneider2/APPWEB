@@ -1,0 +1,70 @@
+/* Inventario.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial o una fuente sans-serif genérica */
+  padding: 20px; /* Agrega un espacio de 20 píxeles de relleno alrededor del cuerpo del documento */
+  margin: 0; /* Elimina los márgenes del cuerpo del documento */
+  color: black; /* Establece el color del texto como negro */
+}
+
+/* Estilo de la tabla */
+table {
+  border-collapse: collapse; /* Combina los bordes de las celdas de la tabla */
+  width: 100%; /* Establece el ancho de la tabla como el 100% del contenedor */
+  background: linear-gradient(to bottom, #D0D3D4, #439B8F, #D0D3D4); /* Establece un fondo degradado para la tabla */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Establece un borde de 1 píxel sólido con color #ddd para las celdas de encabezado y datos */
+  padding: 8px; /* Agrega un espacio interno de 8 píxeles dentro de las celdas */
+  text-align: left; /* Alinea el texto dentro de las celdas a la izquierda */
+}
+
+th {
+  background-color: #f2f2f2; /* Establece un fondo de color #f2f2f2 para las celdas de encabezado */
+}
+
+/* Estilo de los botones */
+button {
+  background-color: #4CAF50; /* Establece el color de fondo del botón como #4CAF50 */
+  border: none; /* Elimina el borde del botón */
+  color: white; /* Establece el color del texto del botón como blanco */
+  padding: 8px 16px; /* Agrega un espacio interno de 8 píxeles en vertical y 16 píxeles en horizontal al botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  text-decoration: none; /* Elimina la decoración de texto del botón */
+  display: inline-block; /* Establece el botón como un elemento de línea */
+  font-size: 14px; /* Establece el tamaño de fuente del texto del botón como 14 píxeles */
+  margin: 4px 2px; /* Establece un margen de 4 píxeles en vertical y 2 píxeles en horizontal al botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.btnAgregar {
+  background-color: #4CAF50; /* Establece el color de fondo del botón "Agregar" como #4CAF50 */
+  margin-bottom: 4em; /* Establece un margen inferior de 4 unidades de altura de línea al botón "Agregar" */
+  margin-top: 1em; /* Establece un margen superior de 1 unidad de altura de línea al botón "Agregar" */
+}
+
+.btnEliminar {
+  background-color: #f44336; /* Establece el color de fondo del botón "Eliminar" como #f44336 */
+}
+
+/* Estilo del formulario */
+form {
+  margin-bottom: 20px; /* Establece un margen inferior de 20 píxeles al formulario */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 590px) {
+  form {
+      max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 600px) {
+  form {
+      max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas grandes */
+  }
+}

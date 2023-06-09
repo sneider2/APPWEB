@@ -1,0 +1,152 @@
+@page
+@model RegistroClientesModel
+@{
+    ViewData["Title"] = "Registro de Clientes";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="~/css/RegistroClientes.css">
+</head>
+<body>
+  <h1>Registro de Clientes</h1>
+
+<form method="post">
+  <div class="formulario">
+       <div>
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[a-zA-Zñ-Ñ]{2,15}" title="Ingresa de 2 a 15 letras" required />
+    </div>
+    <div>
+        <!-- Apellido -->
+        <label for="apellido">Apellido:</label>
+        <input class="derecha" type="text" id="apellido" name="apellido" pattern="[a-zA-Zñ-Ñ]{2,15}" title="Ingresa de 2 a 15 letras" required />
+    </div>
+    <div>
+        <!-- Correo Electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" />
+    </div>
+    <div>
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input class="derecha" type="tel" id="telefono" name="telefono" pattern="[0-9]{10,10}" title="El número debe ser de 10 dígitos" required />
+    </div>
+    <div>
+        <!-- Usuario -->
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario"  pattern="[a-zA-Zñ-Ñ]{2,15}" title="Ingresa de 2 a 15 letras" required />
+    </div>
+    <div>
+        <!-- Contraseña -->
+        <label for="contraseña">Contraseña:</label>
+        <input class="derecha" type="text" id="contraseña" name="contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[a-z]).{8,}$" required />
+    </div>
+    <div class="confircontra">
+        <!-- Confirmar Contraseña -->
+        <label for="confirmarcontraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmarcontraseña" name="confirmarcontraseña" onkeyup="validatePassword()" required>
+    </div>
+  </div>
+   
+<ul id="passwordRequirements">
+  <!-- Requisitos de contraseña -->
+  <li><input type="checkbox" id="lengthCheckbox" disabled> Mínimo 8 caracteres</li>
+  <li><input type="checkbox" id="letterCheckbox" disabled> Al menos una letra</li>
+  <li><input type="checkbox" id="numberCheckbox" disabled> Al menos un número</li>
+  <li><input type="checkbox" id="uppercaseCheckbox" disabled> Al menos una letra en mayúscula</li>
+</ul>
+
+<script>
+function validatePassword() {
+  var passwordInput = document.getElementById("confirmarcontraseña");
+  var lengthCheckbox = document.getElementById("lengthCheckbox");
+  var letterCheckbox = document.getElementById("letterCheckbox");
+  var uppercaseCheckbox = document.getElementById("uppercaseCheckbox");
+  var numberCheckbox = document.getElementById("numberCheckbox");
+  
+  // Validar longitud mínima
+  if (passwordInput.value.length >= 8) {
+    lengthCheckbox.checked = true;
+    lengthCheckbox.disabled = true;
+  } else {
+    lengthCheckbox.checked = false;
+    lengthCheckbox.disabled = false;
+  }
+  
+  // Validar al menos una letra
+  if (/[A-Za-z]/.test(passwordInput.value)) {
+    letterCheckbox.checked = true;
+    letterCheckbox.disabled = true;
+  } else {
+    letterCheckbox.checked = false;
+    letterCheckbox.disabled = false;
+  }
+
+  // Validar al menos una letra en mayúscula
+  if (/[A-Z]/.test(passwordInput.value)) {
+    uppercaseCheckbox.checked = true;
+    uppercaseCheckbox.disabled = true;
+  } else {
+    uppercaseCheckbox.checked = false;
+    uppercaseCheckbox.disabled = false;
+  }
+  
+  // Validar al menos un número
+  if (/\d/.test(passwordInput.value)) {
+    numberCheckbox.checked = true;
+    numberCheckbox.disabled = true;
+  } else {
+    numberCheckbox.checked = false;
+    numberCheckbox.disabled = false;
+  }
+}
+function validatePasswords() {
+  var contra = document.getElementById("contraseña");
+  var confircontra= document.getElementById("confirmarcontraseña");
+  
+  if (contra.value !== confircontra.value) {
+    alert("Las contraseñas no coinciden. Por favor, vuelve a intentarlo.");
+    contra.value=""; //limpiar campos de contraseña
+    confircontra.value="";
+    resetCheckboxes(); // limpio casillas de validacion de contraseñas
+
+    return false; // Evita enviar el formulario si las contraseñas no coinciden
+  }
+  
+  // Si las contraseñas coinciden, puedes continuar con el envío del formulario o realizar otras acciones
+  return true;
+}
+function resetCheckboxes() {
+  var lengthCheckbox = document.getElementById("lengthCheckbox");
+  var letterCheckbox = document.getElementById("letterCheckbox");
+  var uppercaseCheckbox = document.getElementById("uppercaseCheckbox");
+  var numberCheckbox = document.getElementById("numberCheckbox");
+
+  lengthCheckbox.checked = false;
+  lengthCheckbox.disabled = false;
+  letterCheckbox.checked = false;
+  letterCheckbox.disabled = false;
+  uppercaseCheckbox.checked = false;
+  uppercaseCheckbox.disabled = false;
+  numberCheckbox.checked = false;
+  numberCheckbox.disabled = false;
+}
+</script>
+
+    
+    <div>
+        <!-- Botón de Registro -->
+        <button onclick="validatePasswords()" type="submit">Registrar</button>
+    </div>
+</form>
+
+</body>
+</html>

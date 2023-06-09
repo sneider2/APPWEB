@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial o una fuente sans-serif genérica */
+    padding: 20px; /* Agrega un espacio de 20 píxeles de relleno alrededor del cuerpo del documento */
+    margin: 0; /* Elimina los márgenes del cuerpo del documento */
+    background: linear-gradient(to bottom, #58AFA4, #439B8F, #fff); /* Establece un fondo degradado para el cuerpo del documento */
+    color: #000; /* Establece el color del texto como negro */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 500px; /* Establece el ancho máximo del contenedor principal como 500 píxeles */
+    margin: 0 auto; /* Centra el contenedor principal horizontalmente dentro del cuerpo del documento */
+}
+
+/* Estilos para el título */
+h1 {
+    color: #000; /* Establece el color del título como negro */
+    text-align: center; /* Centra el texto del título horizontalmente */
+    margin-bottom: 20px; /* Agrega un espacio inferior de 20 píxeles al título */
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #fff; /* Establece el fondo del formulario como blanco */
+    border-radius: 5px; /* Agrega un borde redondeado de 5 píxeles al formulario */
+    padding: 20px; /* Agrega un espacio interno de 20 píxeles alrededor del formulario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Agrega una sombra al formulario */
+    margin-bottom: 3em; /* Agrega un espacio inferior de 3 unidades de altura de línea al formulario */
+}
+
+/* Estilos para las etiquetas de campo */
+label {
+    display: block; /* Convierte las etiquetas de campo en elementos de bloque para que ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* Agrega un espacio inferior de 10 píxeles a las etiquetas de campo */
+    color: #333; /* Establece el color del texto de las etiquetas de campo como negro */
+    font-weight: bold; /* Establece el peso de fuente en negrita para las etiquetas de campo */
+}
+
+/* Estilos para los campos de texto y contraseña */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Establece el ancho de los campos de texto y contraseña como el 100% del contenedor */
+    padding: 10px; /* Agrega un espacio interno de 10 píxeles a los campos de texto y contraseña */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel sólido con color #ccc para los campos de texto y contraseña */
+    border-radius: 3px; /* Agrega un borde redondeado de 3 píxeles a los campos de texto y contraseña */
+    margin-bottom: 15px; /* Agrega un espacio inferior de 15 píxeles a los campos de texto y contraseña */
+}
+
+/* Estilos para el botón de inicio de sesión */
+button[type="submit"] {
+    background-color: #24AD9B; /* Establece el color de fondo del botón de inicio de sesión como #24AD9B */
+    color: #fff; /* Establece el color del texto del botón de inicio de sesión como blanco */
+    padding: 10px 20px; /* Agrega un espacio interno de 10 píxeles en la parte superior e inferior y 20 píxeles en los lados del botón de inicio de sesión */
+    margin-bottom: 1em; /* Agrega un espacio inferior de 1 unidad de altura de línea al botón de inicio de sesión */
+    border: none; /* Elimina el borde del botón de inicio de sesión */
+    border-radius: 3px; /* Agrega un borde redondeado de 3 píxeles al botón de inicio de sesión */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de inicio de sesión */
+    font-weight: bold; /* Establece el peso de fuente en negrita para el botón de inicio de sesión */
+    transition: background-color 0.3s ease; /* Agrega una transición suave de 0.3 segundos al cambiar el color de fondo del botón de inicio de sesión */
+    width: 100%; /* Establece el ancho del botón de inicio de sesión como el 100% del contenedor */
+}
+
+button[type="submit"]:hover {
+    background-color: #206A60; /* Cambia el color de fondo del botón de inicio de sesión a #206A60 al pasar el cursor sobre él */
+}
+
+/* Estilos para el enlace de recuperar contraseña */
+.recuperarcontra {
+    display: block; /* Convierte el enlace de recuperar contraseña en un elemento de bloque */
+    color: #206A60; /* Establece el color del enlace de recuperar contraseña como #206A60 */
+    text-decoration: none; /* Elimina la decoración de texto del enlace de recuperar contraseña */
+    margin-top: 10px; /* Agrega un espacio superior de 10 píxeles al enlace de recuperar contraseña */
+    font-weight: bold; /* Establece el peso de fuente en negrita para el enlace de recuperar contraseña */
+    text-align: center; /* Centra el texto del enlace de recuperar contraseña horizontalmente */
+}
+
+.recuperarcontra:hover {
+    color: #e91e63 !important; /* Cambia el color del enlace de recuperar contraseña a #e91e63 al pasar el cursor sobre él */
+}
+
+.mensajeerror,
+.mensaje {
+    margin-top: 1em; /* Agrega un espacio superior de 1 unidad de altura de línea al mensaje de error y mensaje */
+    margin-bottom: 1em; /* Agrega un espacio inferior de 1 unidad de altura de línea al mensaje de error y mensaje */
+    padding: 10px; /* Agrega un espacio interno de 10 píxeles alrededor del mensaje de error y mensaje */
+    background-color: #f8d7da; /* Establece el color de fondo del mensaje de error y mensaje como #f8d7da */
+    color: #721c24; /* Establece el color del texto del mensaje de error y mensaje como #721c24 */
+    border: 1px solid #f5c6cb; /* Establece un borde de 1 píxel sólido con color #f5c6cb para el mensaje de error y mensaje */
+    border-radius: 4px; /* Agrega un borde redondeado de 4 píxeles al mensaje de error y mensaje */
+    text-align: center; /* Centra el texto del mensaje de error y mensaje horizontalmente */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 590px) {
+    form {
+        max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas pequeñas */
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 600px) {
+    form {
+        max-width: 100%; /* Establece el ancho máximo del formulario como el 100% del contenedor en pantallas grandes */
+    }
+}
